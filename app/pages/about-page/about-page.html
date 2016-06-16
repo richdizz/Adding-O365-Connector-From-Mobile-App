@@ -1,0 +1,17 @@
+
+<ion-navbar *navbar>
+  <ion-title>
+    About
+  </ion-title>
+</ion-navbar>
+
+<ion-content padding>
+  <p>
+    You can connect this mobile application to Office 365 so that activity you perform in it is sent into specific Office 365 groups. Just click the link below to initate a connection to a group!
+  </p>
+  <h4>Group:</h4>
+  <p>{{sub.group}}</p>
+  <h4>Webhook:</h4>
+  <p>{{sub.webhook}}</p>
+  <button primary block (click)="connectToO365()">Connect to Office 365</button>
+</ion-content>
